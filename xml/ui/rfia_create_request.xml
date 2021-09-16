@@ -41,7 +41,7 @@
 			</rfi_button>
 			<rfi_button name="select_random_pc_button">
 				<anchored width="130" height="25">
-					<top parent="rolls_list_button" anchor="bottom" relation="relative" offset="10"/>
+					<top parent="rolls_list_button" anchor="bottom" relation="relative" offset="3"/>
 					<left parent="rolls_list_button" anchor="left"  offset="0"/>
 				</anchored>
 				<textres>RFIA_button_label_select_random_pc</textres>
@@ -208,7 +208,7 @@
 				</script> -->
 				<class>rfia_entry</class>				
 				<anchored height="50">
-					<top parent="rfia_pc_list" anchor="bottom" relation="relative" offset="35" />
+					<top parent="rfia_pc_list" anchor="bottom" relation="relative" offset="30" />
 					<left offset="37"/>
 					<right offset="-35"/>
 				</anchored>	
@@ -512,7 +512,7 @@
 			<anchor_column name="columnanchor" />
 			<rfi_toggle_button name="select_button">
 				<anchored width="50" height="25">
-					<top parent="columnanchor" anchor="bottom" offset="10"/>
+					<top parent="columnanchor" anchor="bottom" offset="5"/>
 					<left/>
 				</anchored>
 				<script>
@@ -530,8 +530,8 @@
 			<anchor_column name="columnanchor" />
 			<rfi_toggle_button name="select_button">
 				<anchored width="120" height="25">
-					<top parent="columnanchor" anchor="bottom" offset="10"/>
-					<left offset="10"/>
+					<top parent="columnanchor" anchor="bottom" offset="5"/>
+					<left offset="5"/>
 				</anchored>
 				<script>
 					function onButtonPress()

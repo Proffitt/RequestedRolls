@@ -16,7 +16,7 @@
 	
 	<template name="rfi_roll_list">
 		<windowlist name="list">
-			<frame name="groupbox" offset="10,10,10,10" />
+			<frame name="groupbox" offset="5,5,5,5" />
 			<columns width="100"/>
 			<sizelimits>
 				<dynamic />
