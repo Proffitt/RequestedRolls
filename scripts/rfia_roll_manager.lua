@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-field
 --[[
 Handles the rolls list and the rolls.
 
