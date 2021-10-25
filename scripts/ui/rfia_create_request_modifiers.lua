@@ -1,5 +1,3 @@
-local ADV_MODIFIER = "RFIA_Root.modifiers.ADV";
-local DIS_MODIFIER = "RFIA_Root.modifiers.DIS";
 local HIDDEN_MODIFIER = "RFIA_Root.modifiers.HIDDEN";
 local DC_MODIFIER = "RFIA_Root.modifiers.DC";
 
@@ -18,8 +16,6 @@ end
 
 function updateModifierButtons()
 	-- Debug.console("rfia_create_request_modifiers.lua updateModifierButtons");
-	updateButton(ADV, ADV_MODIFIER);
-	updateButton(DIS, DIS_MODIFIER);
 	updateButton(HIDDEN, HIDDEN_MODIFIER);
 end
 
@@ -31,8 +27,6 @@ end
 
 function clearButtons()
 	-- Debug.console("rfia_create_request_modifiers.lua clearButtons");
-	clearButton(ADV);
-	clearButton(DIS);
 	clearButton(HIDDEN);
 end
 

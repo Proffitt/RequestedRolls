@@ -175,33 +175,13 @@
 					<textres>RFI_hidden_tooltip_modifier</textres>
 				</tooltip>
 			</genericcontrol>
-			<genericcontrol name="adv">
-				<anchored width="25" height="25">
-					<top parent="roll_button" anchor="bottom" offset="0"/>
-					<left parent="token" anchor="right" relation="relative" offset="10"/>
-				</anchored>
-				<icon>RFI_Adv</icon>
-				<tooltip>
-					<textres>RFI_adv_tooltip_modifier</textres>
-				</tooltip>
-			</genericcontrol>
-			<genericcontrol name="dis">
-				<anchored width="25" height="25">
-					<top parent="roll_button" anchor="bottom" offset="0"/>
-					<left parent="token" anchor="right" relation="relative" offset="10"/>
-				</anchored>
-				<icon>RFI_Dis</icon>
-				<tooltip>
-					<textres>RFI_dis_tooltip_modifier</textres>
-				</tooltip>
-			</genericcontrol>
 			<stringcontrol name="mod">
 				<anchored height="25">
 					<top parent="roll_button" anchor="bottom" offset="0"/>
 					<left parent="token" anchor="right" relation="relative" offset="20"/>
 				</anchored>
-				<frame name="metalplate" offset="10,2,10,2"/>
-				<font>subwindowsmalltitle</font>
+				<frame name="groupbox" offset="10,2,10,2"/>
+				<font>reference-subtitle</font>
 				<center />
 				<nodrag />
 				<readonly />
@@ -212,8 +192,8 @@
 					<top parent="roll_button" anchor="bottom" offset="0"/>
 					<left parent="token" anchor="right" relation="relative" offset="20"/>
 				</anchored>
-				<frame name="metalplate" offset="10,2,10,2"/>
-				<font>subwindowsmalltitle</font>
+				<frame name="groupbox" offset="10,2,10,2"/>
+				<font>reference-subtitle</font>
 				<center />
 				<nodrag />
 				<readonly />
@@ -295,33 +275,13 @@
 					<textres>RFI_hidden_tooltip_modifier</textres>
 				</tooltip>
 			</genericcontrol>
-			<genericcontrol name="adv">
-				<anchored width="25" height="25">
-					<top parent="roll_button" anchor="bottom" offset="0"/>
-					<left parent="token" anchor="right" relation="relative" offset="10"/>
-				</anchored>
-				<icon>RFI_Adv</icon>
-				<tooltip>
-					<textres>RFI_adv_tooltip_modifier</textres>
-				</tooltip>
-			</genericcontrol>
-			<genericcontrol name="dis">
-				<anchored width="25" height="25">
-					<top parent="roll_button" anchor="bottom" offset="0"/>
-					<left parent="token" anchor="right" relation="relative" offset="10"/>
-				</anchored>
-				<icon>RFI_Dis</icon>
-				<tooltip>
-					<textres>RFI_dis_tooltip_modifier</textres>
-				</tooltip>
-			</genericcontrol>
 			<stringcontrol name="mod">
 				<anchored height="25">
 					<top parent="roll_button" anchor="bottom" offset="0"/>
 					<left parent="token" anchor="right" relation="relative" offset="20"/>
 				</anchored>
-				<frame name="metalplate" offset="10,2,10,2"/>
-				<font>subwindowsmalltitle</font>
+				<frame name="groupbox" offset="10,2,10,2"/>
+				<font>reference-subtitle</font>
 				<center />
 				<nodrag />
 				<readonly />
@@ -332,8 +292,8 @@
 					<top parent="roll_button" anchor="bottom" offset="0"/>
 					<left parent="token" anchor="right" relation="relative" offset="20"/>
 				</anchored>
-				<frame name="metalplate" offset="10,2,10,2"/>
-				<font>subwindowsmalltitle</font>
+				<frame name="groupbox" offset="10,2,10,2"/>
+				<font>reference-subtitle</font>
 				<center />
 				<nodrag />
 				<readonly />

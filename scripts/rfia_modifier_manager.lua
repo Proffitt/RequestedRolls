@@ -18,8 +18,6 @@ function createNode(name)
 end
 
 function populateModifiers()
-	createModifier("ADV", "number");
-	createModifier("DIS", "number");
 	createModifier("PLUS2", "number");
 	createModifier("PLUS5", "number");
 	createModifier("MINUS2", "number");

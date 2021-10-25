@@ -177,42 +177,40 @@ function populateDB()
 	addAbilityItem("WIS", 			"Ability",	"Wisdom Check",					performCheckRoll, "Wisdom" 		);
 	addAbilityItem("CHA", 			"Ability",	"Charisma Check",				performCheckRoll, "Charisma" 	);
                                                                                                          
-	addSaveItem("STR", 				"Save", 		"Strength Saving Throw",		performSaveRoll , "Strength" 	);
-	addSaveItem("DEX", 				"Save", 		"Dexterity Saving Throw",		performSaveRoll , "Dexterity" 	);
-	addSaveItem("CON", 				"Save", 		"Constitution Saving Throw",	performSaveRoll , "Constitution" );
-	addSaveItem("INT", 				"Save", 		"Intelligence Saving Throw",	performSaveRoll , "Intelligence" );
-	addSaveItem("WIS", 				"Save", 		"Wisdom Saving Throw",			performSaveRoll , "Wisdom" 		);
-	addSaveItem("CHA", 				"Save", 		"Charisma Saving Throw",		performSaveRoll , "Charisma" 	);
+	addSaveItem("FORT", 			"Save", 		"Fortitude Saving Throw",		performSaveRoll , "Fortitude" 	);
+	addSaveItem("REF", 				"Save", 		"Reflex Saving Throw",			performSaveRoll , "Reflex" 	);
+	addSaveItem("WILL", 			"Save", 		"Will Saving Throw",			performSaveRoll , "Will" );
 	
 	addSaveOverrideItem("SAV", 		"SaveOverride", 		"SaveOverride",		performSaveOverrideRoll , "SaveOverride" );
-		
-	addSkillItem("Acrobatics", 		"Skill", 		"Acrobatics Check",				performSkillRoll);
-	addSkillItem("Animal Handling", "Skill", 		"Animal Handling Check",		performSkillRoll);
-	addSkillItem("Arcana", 			"Skill", 		"Arcana Check",					performSkillRoll);
-	addSkillItem("Athletics", 		"Skill", 		"Athletics Check",				performSkillRoll);
-	addSkillItem("Deception", 		"Skill", 		"Deception Check",				performSkillRoll);
-	addSkillItem("History", 		"Skill", 		"History Check",				performSkillRoll);
-	addSkillItem("Insight", 		"Skill", 		"Insight Check",				performSkillRoll);
-	addSkillItem("Intimidation",	"Skill", 		"Intimidation Check",			performSkillRoll);
-	addSkillItem("Investigation",	"Skill", 		"Investigation Check",			performSkillRoll);
-	addSkillItem("Medicine", 		"Skill", 		"Medicine Check",				performSkillRoll);
-	addSkillItem("Nature", 			"Skill", 		"Nature Check",					performSkillRoll);
-	addSkillItem("Perception", 		"Skill", 		"Perception Check",				performSkillRoll);
-	addSkillItem("Performance", 	"Skill", 		"Performance Check",			performSkillRoll);
-	addSkillItem("Persuasion", 		"Skill", 		"Persuasion Check",				performSkillRoll);
-	addSkillItem("Religion", 		"Skill", 		"Religion Check",				performSkillRoll);
-	addSkillItem("Sleight of Hand",	"Skill", 		"Sleight of Hand Check",		performSkillRoll);
-	addSkillItem("Stealth", 		"Skill", 		"Stealth Check",				performSkillRoll);
-	addSkillItem("Survival", 		"Skill", 		"Survival Check",				performSkillRoll);
-	if bCharacterSheetTweaksEnabled then
-		addSkillItem("Tools/Items: Artisans Tools", "Skill", "Artisans Tools",			performSkillRoll); 
-		addSkillItem("Tools/Items: Gaming Set", "Skill", "Gaming Set", 					performSkillRoll); 
-		addSkillItem("Tools/Items: Instrument", "Skill", "Instrument", 					performSkillRoll); 
-		addSkillItem("Tools/Items: Thieves Tools", "Skill", "Thieves Tools", 			performSkillRoll);
-	end
+	
+	addSkillItem("Acrobatics", 		"Skill", 		"Acrobatics Check",				performSkillRoll,	"Acrobatics");
+	addSkillItem("Appraise", 		"Skill", 		"Appraise Check",				performSkillRoll,	"Appraise");
+	addSkillItem("Bluff", 			"Skill", 		"Bluff Check",					performSkillRoll,	"Bluff");
+	addSkillItem("Climb", 			"Skill", 		"Climb Check",					performSkillRoll,	"Climb");
+	addSkillItem("Craft", 			"Skill", 		"Craft Check",					performSkillRoll,	"Craft");
+	addSkillItem("Diplomacy", 		"Skill", 		"Diplomacy Check",				performSkillRoll,	"Diplomacy");
+	addSkillItem("Disable Device", 	"Skill", 		"Disable Device Check",			performSkillRoll,	"Disable Device");
+	addSkillItem("Disguise", 		"Skill", 		"Disguise Check",				performSkillRoll,	"Disguise");
+	addSkillItem("Escape Artist",	"Skill", 		"Escape Artist Check",			performSkillRoll,	"Escape Artist");
+	addSkillItem("Fly", 			"Skill", 		"Fly Check",					performSkillRoll,	"Fly");
+	addSkillItem("Handle Animal", 	"Skill", 		"Handle Animal Check",			performSkillRoll,	"Handle Animal");
+	addSkillItem("Heal", 			"Skill", 		"Heal Check",					performSkillRoll,	"Heal");
+	addSkillItem("Intimidate", 		"Skill", 		"Intimidate Check",				performSkillRoll,	"Intimidate");
+	addSkillItem("Knowledge", 		"Skill", 		"Knowledge Check",				performSkillRoll,	"Knowledge");
+	addSkillItem("Linguistics", 	"Skill", 		"Linguistics Check",			performSkillRoll,	"Linguistics");
+	addSkillItem("Perception", 		"Skill", 		"Perception Check",				performSkillRoll,	"Perception");
+	addSkillItem("Perform", 		"Skill", 		"Perform Check",				performSkillRoll,	"Perform");
+	addSkillItem("Profession", 		"Skill", 		"Profession Check",				performSkillRoll,	"Profession");
+	addSkillItem("Ride", 			"Skill", 		"Ride Check",					performSkillRoll,	"Ride");
+	addSkillItem("Sense Motive", 	"Skill", 		"Sense Motive Check",			performSkillRoll,	"Sense Motive");
+	addSkillItem("Sleight of Hand", "Skill", 		"Sleight of Hand Check",		performSkillRoll,	"Sleight of Hand");
+	addSkillItem("Spellcraft", 		"Skill", 		"Spellcraft Check",				performSkillRoll,	"Spellcraft");
+	addSkillItem("Stealth", 		"Skill", 		"Stealth Check",				performSkillRoll,	"Stealth");
+	addSkillItem("Survival", 		"Skill", 		"Survival Check",				performSkillRoll,	"Survival");
+	addSkillItem("Swim", 			"Skill", 		"Swim Check",					performSkillRoll,	"Swim");
+	addSkillItem("Use Magic Device","Skill", 		"Use Magic Device Check",		performSkillRoll,	"Use Magic Device");
 	
 	addExtraItem("INIT", 			"Initiative", 	"Roll for Initiative",			performInitRoll,	"Initiative");
-	addExtraItem("Death", 			"Death", 		"Death Saving Throw",			performDeathSaveRoll);
 	
 	addDieItem("d4", 				"Dice", 		"Roll a d4",					performRawRoll);
 	addDieItem("d6", 				"Dice", 		"Roll a d6",					performRawRoll);
@@ -326,8 +324,6 @@ function performRoll(request)
 end
 
 function applyModifiers(request)
-	tryToApplyModifier(request, "ADV");
-	tryToApplyModifier(request, "DIS");
 	tryToApplyModifier(request, "PLUS2");
 	tryToApplyModifier(request, "PLUS5");
 	tryToApplyModifier(request, "MINUS2");
@@ -411,12 +407,15 @@ function performSkillRollForPc(request)
 	local rollName = request:getRollName();	
 		
 	for k,node in pairs(DB.getChildren(charSkillList)) do
-		local itemSkillName = DB.getValue(node,"name","");
+		local itemSkillName = DB.getValue(node,"label","");
 		if itemSkillName == rollName then
-			local rRoll = ActionSkill.getRoll(request:getActor(), node);
+			local nSkillMod = DB.getValue(node, "total", 0);
+			local sSkillStat = DB.getValue(node, "statname", "");
+			local rRoll = ActionSkill.getRoll(request:getActor(), itemSkillName, nSkillMod, sSkillStat)
 			rRoll.bSecret = request:isHidden();
 			rRoll.bTower = request:isHidden();
 			rRoll.nTarget = request:getDC();
+			Debug.console(rRoll);
 			ActionsManager.performAction(nil, request:getActor(), rRoll);
 			return;
 		end
@@ -459,19 +458,6 @@ function performSkillRollForNpc(request)
 		
 	-- Have not found the skill at all. 
 	ChatManager.SystemMessage("[" .. Interface.getString("tag_warning") .. "] ( Unable to find NPC skill '" ..  rollName  .. "' " .. "on NPC or from default list)");
-end
-
-function performDeathSaveRoll( request )
-	local rRoll = { };
-	rRoll.bRFIARequestRoll = true;
-	rRoll.sType = "death";
-	rRoll.aDice = { "d20" };
-	rRoll.nMod = 0;	
-	rRoll.sDesc = "[DEATH]";
-	rRoll.bSecret = request:isHidden();
-	rRoll.bTower = request:isHidden();
-	
-	ActionsManager.performAction(nil, request:getActor(), rRoll);
 end
 
 function performRawRoll( request )

@@ -6,8 +6,8 @@
 				<top anchor="top" offset="-22"/>
 				<left offset="20"/>
 			</anchored>
-			<frame name="metalplate" offset="10,2,10,2"/>
-			<font>subwindowsmalltitle</font>
+			<frame name="groupbox" offset="10,2,10,2"/>
+			<font>reference-subtitle</font>
 			<center />
 			<nodrag />
 			<readonly />
@@ -31,8 +31,8 @@
 				<top anchor="top" offset="-22"/>
 				<left offset="20"/>
 			</anchored>
-			<frame name="metalplate" offset="10,2,10,2"/>
-			<font>subwindowsmalltitle</font>
+			<frame name="groupbox" offset="10,2,10,2"/>
+			<font>reference-subtitle</font>
 			<center />
 			<nodrag />
 			<readonly />

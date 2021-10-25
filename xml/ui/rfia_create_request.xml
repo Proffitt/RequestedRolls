@@ -355,8 +355,8 @@
 					<left offset="40"/>
 					<right offset="-40"/>
 				</anchored>
-				<frame name="metalplate" offset="10,2,10,2"/>
-				<font>subwindowsmalltitle</font>
+				<frame name="groupbox" offset="10,2,10,2"/>
+				<font>reference-subtitle</font>
 				<center />
 				<nodrag />
 				<readonly />
@@ -372,23 +372,9 @@
 				<activate/>
 			</subwindow>
 			
-			<rfi_modifier_button name="DIS">
-				<anchored  height="25" width="35">
-					<top parent="columnanchor" anchor="bottom" offset="35"/>
-					<left parent="modifiers" anchor="right" offset="5"/>
-				</anchored>
-				<text>DIS</text>
-			</rfi_modifier_button>
-			<rfi_modifier_button name="ADV">
-				<anchored  height="25" width="35">
-					<top parent="columnanchor" anchor="bottom" offset="35"/>
-					<left parent="DIS" anchor="right" offset="5"/>
-				</anchored>
-				<text>ADV</text>
-			</rfi_modifier_button>
 			<rfi_modifier_button name="HIDDEN">
 				<anchored  height="25" width="75">
-					<top parent="DIS" anchor="bottom" offset="5"/>
+					<top parent="columnanchor" anchor="bottom" offset="35"/>
 					<left parent="modifiers" anchor="right" offset="5"/>
 				</anchored>
 				<text>HIDDEN</text>

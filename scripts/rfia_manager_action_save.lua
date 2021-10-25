@@ -10,9 +10,6 @@ function onInit()
 	ActionsManager.registerModHandler("save", modSave);	
 	ActionsManager.registerResultHandler("save", onSave);	
 	
-	ActionsManager.registerModHandler("death", modSave);
-	ActionsManager.registerResultHandler("death", onDeathRoll);
-
 	ActionsManager.registerModHandler("concentration", modSave);
 	ActionsManager.registerResultHandler("concentration", onConcentrationRoll);
 	
@@ -80,20 +77,6 @@ function onSave(rSource, rTarget, rRoll)
 	else
 		ActionSave.onSave(rSource, rTarget, rRoll);
 	end
-end
-
-function onDeathRoll(rSource, rTarget, rRoll)
-	if RFIA.bDebug then Debug.chat("rfia on death"); end
-	if  shouldOverride(rRoll, rSource) then
-		if Session.IsHost then
-			ctNode = RFIAEntriesManager.getEntryByPath(rSource.sCTNode);
-			RFIARollOverrideManager.requestSaveOverrideOnSave(ctNode, rRoll);
-		else
-			--do nothing?
-		end
-	else
-		ActionSave.onDeathRoll(rSource, rTarget, rRoll);
-	end	
 end
 
 function onConcentrationRoll(rSource, rTarget, rRoll)

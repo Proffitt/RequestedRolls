@@ -121,9 +121,6 @@ function updateRequestSaveOverrideOnSave(ctNode, rRoll)
 	message = RFIARequestManager.createRequestMessage(owner);
 	
 	request = RFIWrapper.wrapRequest(requestNode);
-		--Sort out modifiers for UI
-	updateModifierForUi(rRoll.sDesc, "ADV", "%[ADV%]", request)
-	updateModifierForUi(rRoll.sDesc, "DIS", "%[DIS%]", request)
 	if rRoll.nTarget ~= 0 and rRoll.nTarget ~= nil then
 		request:setModifier("DC", rRoll.nTarget);
 	end

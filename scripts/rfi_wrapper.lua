@@ -162,10 +162,6 @@ function wrapRequest(requestNode)
 		listener.updateDescription();
 		DB.addHandler(request.node.getPath() .. ".identity", "onUpdate", listener.updateIcon);
 		listener.updateIcon();
-		DB.addHandler(request.node.getPath() .. ".ADV", "onUpdate", listener.updateADV);
-		listener.updateADV();
-		DB.addHandler(request.node.getPath() .. ".DIS", "onUpdate", listener.updateDIS);
-		listener.updateDIS();
 		DB.addHandler(request.node.getPath() .. ".HIDDEN","onUpdate", listener.updateHIDDEN);
 		listener.updateHIDDEN();
 		DB.addHandler(request.node.getPath() .. ".DC","onUpdate", listener.updateDC);
@@ -183,8 +179,6 @@ function wrapRequest(requestNode)
 	request.unregister = function(request, listener) 
 		DB.removeHandler(request.node.getPath() .. ".description","onUpdate", listener.updateDescription);
 		DB.removeHandler(request.node.getPath() .. ".identity","onUpdate", listener.updateIcon);
-		DB.removeHandler(request.node.getPath() .. ".ADV","onUpdate", listener.updateADV);
-		DB.removeHandler(request.node.getPath() .. ".DIS","onUpdate", listener.updateDIS);
 		DB.removeHandler(request.node.getPath() .. ".HIDDEN","onUpdate", listener.updateHIDDEN);
 		DB.removeHandler(request.node.getPath() .. ".DC","onUpdate", listener.updateDC);
 		DB.removeHandler(request.node.getPath() .. ".ModValue","onUpdate", listener.updateModValue);

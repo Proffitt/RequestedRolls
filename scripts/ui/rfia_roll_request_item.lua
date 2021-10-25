@@ -34,27 +34,6 @@ function updateIcon()
 	token = request:getToken();
 end
 
-function updateADV()
-
-	request = getRequest();
-	showAdv = request:getModifier("ADV") ~= "" and request:getModifier("ADV") ~= nil;
-	adv.setVisible(showAdv);
-	if showAdv then
-		modifier_title.setVisible(true);
-	end
-	
-end
-
-function updateDIS()
-	request = getRequest();
-	showDis = request:getModifier("DIS") ~= "" and request:getModifier("DIS") ~= nil;
-	dis.setVisible(showDis);
-	
-	if showDis then
-		modifier_title.setVisible(true);
-	end
-end
-
 function updateHIDDEN()
 	request = getRequest();
 	hidden.setVisible(request:isHidden());
