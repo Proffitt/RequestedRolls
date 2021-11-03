@@ -18,6 +18,10 @@ function createNode(name)
 end
 
 function populateModifiers()
+	if User.getRulesetName()=="5E" then
+		createModifier("ADV", "number");
+		createModifier("DIS", "number");
+	end
 	createModifier("PLUS2", "number");
 	createModifier("PLUS5", "number");
 	createModifier("MINUS2", "number");

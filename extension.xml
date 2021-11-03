@@ -3,20 +3,24 @@
 <root version="3.0">
 	<properties>
 		<name>Requested Rolls</name>
-		<version>0.5</version>
-		<author>Converted by Jacob Proffitt - Revived by srmccarty - Adapted by Houndy - Originally created by Gerark</author>
+		<version>1.2</version>
+		<author>srmccarty, Jacob Proffitt, et al.-see ReadMe</author>
 		<loadorder>99</loadorder>
 		<ruleset>
 			<name>PFRPG</name>
 			<minrelease>1</minrelease>
 		</ruleset>
+		<ruleset>
+			<name>PFRPG</name>
+			<minrelease>1</minrelease>
+		</ruleset>
 		<description>
-			<text>PFRPG - Requested Rolls</text>
-			<author>Converted for PFRPG by Jacob Proffitt - Revived by srmccarty - Adapted by Houndy - Originally created by Gerark</author>
+			<text>Requested Rolls</text>
+			<author>srmccarty, Jacob Proffitt, et al.-see ReadMe</author>
 		</description>
 	</properties>
-	<announcement text="PFRPG - Requested Rolls version .5\rby, 2021" font="emotefont"/>>
-	<announcement text="For slash commands type /rfia" font="emotefont"/>
+	<announcement text="Requested Rolls version 1.2.1-beta\rby srmccarty, 2021" font="emotefont" icon="Logo_Mccartysr"/>>
+	<announcement text="For slash commands type /RR" font="emotefont"/>
 	<base>		
 		<includefile source="xml/rfia_resources.xml" />
 		<includefile source="xml/rfia_scripts.xml" />
