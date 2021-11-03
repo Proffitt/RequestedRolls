@@ -24,12 +24,12 @@ end
 
 function updateButtons()
 
-	if RFIAExtensionManager.isCoreSideBarThemeEnabled() or RFIAExtensionManager.isColoredSideBarThemeEnabled() then
+	if User.getRulesetName()~="5E" or RFIAExtensionManager.isCoreSideBarThemeEnabled() or RFIAExtensionManager.isColoredSideBarThemeEnabled() then
 		buttonUpImage = "RFIA_CoreSidebarButtonUp";
 		buttonDownImage = "RFIA_CoreSidebarButtonDown";	
 	elseif RFIAExtensionManager.is5EThemeEnabled() then
 		buttonUpImage = "RFIA_5EThemeSidebarButtonUp";
-		buttonDownImage = "RFIA_5EThemeSidebarButtonDown";			
+		buttonDownImage = "RFIA_5EThemeSidebarButtonDown";
 	end
 end
 
