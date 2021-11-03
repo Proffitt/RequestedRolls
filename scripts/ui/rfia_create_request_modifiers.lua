@@ -16,6 +16,10 @@ end
 
 function updateModifierButtons()
 	-- Debug.console("rfia_create_request_modifiers.lua updateModifierButtons");
+	if User.getRulesetName()=="5E" then
+		updateButton(ADV, ADV_MODIFIER);
+		updateButton(DIS, DIS_MODIFIER);
+	end
 	updateButton(HIDDEN, HIDDEN_MODIFIER);
 end
 
@@ -27,6 +31,10 @@ end
 
 function clearButtons()
 	-- Debug.console("rfia_create_request_modifiers.lua clearButtons");
+	if User.getRulesetName()=="5E" then
+		clearButton(ADV);
+		clearButton(DIS);
+	end
 	clearButton(HIDDEN);
 end
 
